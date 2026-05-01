@@ -3,9 +3,7 @@
 
 Plateforme web de gestion éducative permettant de connecter les élèves, professeurs et séances dans un environnement cloud moderne.
 
----
-
-## 🚀 Description du projet
+##  Description du projet
 
 Dourous-Net est une application web développée dans le cadre d’un projet de fin de module “Build & Ship”.
 
@@ -17,61 +15,58 @@ Elle permet :
 
 L’objectif est de simuler une plateforme éducative moderne en utilisant une architecture cloud serverless.
 
----
 
-## 🧱 Architecture du système
+##  Architecture du système
 
-### 🔹 Frontend
+###  Frontend
 - Next.js (App Router)
 - React
 - Vercel (déploiement CI/CD)
 
-### 🔹 Backend (BaaS)
+###  Backend (BaaS)
 - Supabase
   - Authentification
   - Base de données PostgreSQL
   - Storage (fichiers)
 
----
 
-## 🗄️ Modélisation des données (Supabase)
 
-### 🅰️ Table A : Users (Élèves)
+##  Modélisation des données (Supabase)
+
+###  Table A : Users (Élèves)
 - id
 - name
 - email
 - role
 
-### 🅱️ Table B : Profs
+###  Table B : Profs
 - id
 - name
 - subject
 - description
 
-### 🅲 Table C : Séances / Interactions
+###  Table C : Séances / Interactions
 - id
 - user_id (FK → Users)
 - prof_id (FK → Profs)
 - date
 - status
 
-### 📂 Storage
+###  Storage
 - Fichiers liés aux séances :
   - PDF
   - images
   - documents
 
----
 
-## 🔐 Sécurité (RLS - Row Level Security)
+##  Sécurité (RLS - Row Level Security)
 
 - Chaque utilisateur peut uniquement accéder à ses propres séances
 - Isolation des données entre utilisateurs
 - Sécurité gérée côté Supabase
 
----
 
-## 🌐 Fonctionnalités principales
+##  Fonctionnalités principales
 
 - Authentification (login / signup)
 - Liste des professeurs
@@ -80,20 +75,20 @@ L’objectif est de simuler une plateforme éducative moderne en utilisant une a
 - Upload de fichiers
 - Navigation entre pages
 
----
 
-## ☁️ Déploiement
+
+##  Déploiement
 
 - Code source hébergé sur GitHub
 - Déploiement automatique via Vercel (CI/CD)
 - Chaque `git push` déclenche un build et un déploiement automatique
 
-🔗 Lien de production :  
+ Lien de production :  
 dourous-net-inky.vercel.app
 
----
 
-## 💰 Analyse d’architecture (Cloud)
+
+##  Analyse d’architecture (Cloud)
 
 ### 1. Pourquoi Vercel + Supabase ?
 L’utilisation de Vercel et Supabase permet de réduire fortement les coûts de départ.
@@ -103,7 +98,7 @@ L’utilisation de Vercel et Supabase permet de réduire fortement les coûts de
 
 Cela permet un lancement rapide sans investissement matériel.
 
----
+
 
 ### 2. Scalabilité
 
@@ -116,16 +111,14 @@ Contrairement à un data center classique :
 - pas de maintenance matérielle
 - pas de gestion de climatisation ou serveurs physiques
 
----
 
 ### 3. Données structurées et non structurées
 
 - **Structurées** : tables Supabase (Users, Profs, Séances)
 - **Non structurées** : fichiers uploadés dans Supabase Storage (PDF, images)
 
----
 
-## 🧪 Identifiants de test
+##  Identifiants de test
 
 ```text
 Email : test@dourous.com
