@@ -120,6 +120,4 @@ Contrairement à un data center classique :
 
 ##  Identifiants de test
 
-```text
-Email : test@dourous.com
-Password : 123456
+
