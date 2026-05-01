@@ -1,4 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+T# Dourous Net 📚
+
+## Description
+Application de réservation de cours entre élèves et professeurs.
+
+## Fonctionnalités
+- Liste des professeurs
+- Réservation de cours
+- Interface simple
+
+## Architecture
+- Frontend : Next.js
+- Déploiement : Vercel
+- Versioning : GitHub
+
+## Lien du projet
+https://ton-lien-vercel.vercel.apphis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
