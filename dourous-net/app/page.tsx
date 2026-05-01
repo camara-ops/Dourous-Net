@@ -1,3 +1,7 @@
 export default function Home() {
-  return <h1>Projet Dourous OK</h1>;
+  return (
+    <div>
+      <h1>Dourous Net fonctionne ✅</h1>
+    </div>
+  );
 }
